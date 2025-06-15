@@ -1,0 +1,17 @@
+<div *ngIf="pizza; else noPizza">
+  <h2>{{ pizza.name }}</h2>
+  <img [src]="pizza.img" [alt]="pizza.name" />
+
+  <ul class="details-list">
+    <li><strong>Ingredienti:</strong> {{ pizza.ingredients }}</li>
+    <li><strong>Calorie:</strong> {{ pizza.calories }} kcal</li>
+    <li><strong>Disponibilità:</strong> {{ pizza.availability }}</li>
+    <li><strong>Tempo di cottura:</strong> {{ pizza.cookingTime }}</li>
+  </ul>
+
+  <p class="price">Prezzo: €{{ pizza.price.toFixed(2) }}</p>
+</div>
+
+<ng-template #noPizza>
+  <p class="no-pizza">Pizza non trovata.</p>
+</ng-template>

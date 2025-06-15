@@ -1,0 +1,66 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: linear-gradient(to right, white, #ff3c00);
+  color: white;
+  border-radius: 15px;
+  height: 41px;
+  font-family: Arial, sans-serif;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: default;
+}
+
+.logo img {
+  height: 45px;
+  margin-right: 10px;
+  border-radius: 150px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+  color: #ffd180;
+  outline: none;
+}
+
+.cart-icon img {
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.2s ease;
+}
+
+.cart-icon:hover img,
+.cart-icon:focus img {
+  transform: scale(1.1);
+  outline: none;
+}
+
+

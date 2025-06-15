@@ -1,0 +1,117 @@
+.cart-summary-container {
+  background: linear-gradient(
+    135deg,
+    #ffa200,
+    #ffa970 50%,
+    #ffffff
+  );
+  padding: 2rem;
+  height: 671px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 45px;
+  margin-top: 5px;
+}
+
+.cart-title {
+  width: 100%;
+  text-align: center;
+}
+
+.cart-summary-container h2 {
+  color: #ffce54;
+  text-align: center;
+  text-shadow: 0 0 8px rgba(255, 206, 84, 0.85),
+               0 0 14px rgba(255, 206, 84, 0.65),
+               1px 1px 2px #563d00;
+  margin-bottom: -55px;
+}
+
+.cart-item {
+  background: linear-gradient(
+    135deg,
+    #f9d976 0%,
+    #f39c12 50%,
+    #b8860b 100%
+  );
+  border-radius: 25px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease;
+}
+
+.cart-item:hover {
+  transform: scale(1.02);
+}
+
+.item-header {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #4b2e00;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 1px 2px #fff2;
+}
+
+.item-details {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 1rem;
+}
+
+.item-details span {
+  font-weight: bold;
+  color: #b44d00;
+}
+
+.cart-total {
+  font-size: 1.3rem;
+  text-align: right;
+  font-weight: bold;
+  color: #4b2e00;
+}
+
+.cart-total span {
+  color: #b44d00;
+}
+
+.cart-total-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 180px;
+}
+
+.purchase-btn {
+  background-color: #ff9800;
+  color: white;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button {
+  background-color: #ff9800;
+  color: white;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: -200px;
+}
+
+button:hover {
+  background-color: #e68900;
+}

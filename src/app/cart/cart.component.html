@@ -1,0 +1,22 @@
+<div class="cart-summary-container">
+  <div class="cart-title">
+    <h2>Il tuo carrello</h2>
+  </div>
+
+  <div class="cart-item" *ngFor="let item of selectedPizzas">
+    <div class="item-header">{{ item.name }}</div>
+    <div class="item-details">
+      <div>Prezzo unitario: <span>€{{ item.price | number:'1.2-2' }}</span></div>
+      <div>Quantità: <span>x{{ item.qty }}</span></div>
+      <div>Totale: <span>€{{ item.qty * item.price | number:'1.2-2' }}</span></div>
+    </div>
+  </div>
+
+  <div class="cart-total-wrapper" *ngIf="selectedPizzas.length > 0">
+    <div class="cart-total">
+      Totale: <span>€{{ totalPrice | number:'1.2-2' }}</span>
+    </div>
+  </div>
+
+  <button (click)="checkout()" *ngIf="selectedPizzas.length > 0">Paga / Acquista</button>
+</div>

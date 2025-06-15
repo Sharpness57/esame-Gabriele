@@ -1,0 +1,20 @@
+<div class="menu-container">
+  <div class="menu-cards">
+
+    <div class="pizza-card" *ngFor="let pizza of pizzas" (click)="goToPizza(pizza.id)">
+      <img [src]="pizza.img" [alt]="pizza.name" />
+      <h3>{{ pizza.name }}</h3>
+      <p>{{ pizza.description }}</p>
+      <div class="price">€{{ pizza.price.toFixed(2) }}</div>
+
+      <div class="counter" (click)="$event.stopPropagation()">
+        <button (click)="decrease(pizza.name)">−</button>
+        <span>{{ quantityMap[pizza.name] || 0 }}</span>
+        <button (click)="increase(pizza.name)">+</button>
+      </div>
+
+      <button class="delete-btn" (click)="removePizza(pizza.name); $event.stopPropagation()">Elimina</button>
+    </div>
+
+  </div>
+</div>

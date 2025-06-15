@@ -1,0 +1,63 @@
+.contacts-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(to bottom, #ffffff, #ffd700);
+  min-height: 676px;
+  box-sizing: border-box;
+  font-family: 'Georgia', serif;
+  color: #4b2e00; /* marrone caldo, leggibile sul dorato */
+  letter-spacing: 0.5px;
+}
+
+.contacts-container h1 {
+  font-size: 2.5rem;
+  color: #e63946;
+  text-shadow: 0 0 4px #ffb703, 0 0 8px #fb8500;
+  animation: fadeInDown 1s ease-out;
+  margin-bottom: 1.5rem;
+}
+
+.intro {
+  font-size: 1.3rem;
+  color: #4b2e00;
+  font-weight: 500;
+  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6);
+  line-height: 1.7;
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+/* Contatto in due colonne */
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem 3rem;
+  max-width: 600px;
+  text-align: left;
+}
+
+.contact-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.4rem;
+}
+
+.contact-item p {
+  font-size: 1.1rem;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Animazione di entrata */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
